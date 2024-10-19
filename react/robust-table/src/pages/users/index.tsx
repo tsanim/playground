@@ -17,11 +17,11 @@ const UsersPage: FunctionComponent<{}> = () => {
     const filteredData = useMemo<User[]>(() => filterByText<User>(data, debouncedText), [data, debouncedText])
     const [viewMode, setViewMode] = useState<'pagination' | 'infinityScroll'>('pagination');
     const showPaginationTable: boolean = useMemo(() => viewMode === 'pagination', [viewMode])
-
+    
     const handleViewModeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setViewMode(event.target.value as 'pagination' | 'infinityScroll');
     };
-
+    
     // TODO: Make skeleton table for better UX
     if (loading) return <div className="loader">Loading...</div>
 

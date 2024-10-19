@@ -16,16 +16,20 @@ const Pagination: FunctionComponent<Props> = ({ setSize, toNextPage, toPrevPage,
         setSize(parseInt(e.target.value))
     }, [page, resetPage, setSize])
 
-    return <div className="pagination">
-        <button onClick={() => toPrevPage()}>&#8592;</button>
-        <button onClick={() => toNextPage()}>&#8594;</button>
-        <div>Page: {page}</div>
-        <select onChange={handleSelectChange} value={size}>
-            <option value="10">10</option>
-            <option value="25">25</option>
-            <option value="50">50</option>
-        </select>
-    </div>
+    return <tr>
+        <td>
+            <div className="pagination">
+                <button onClick={() => toPrevPage()}>&#8592;</button>
+                <button onClick={() => toNextPage()}>&#8594;</button>
+                <div>Page: {page}</div>
+                <select onChange={handleSelectChange} value={size}>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+        </td>
+    </tr>
 }
 
 export default memo(Pagination)

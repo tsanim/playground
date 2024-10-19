@@ -1,9 +1,4 @@
-interface PaginationOptions {
-    size?: number;
-    page?: number;
-}
-
-type GetPaginated = <T>(data: T[], options?: PaginationOptions) => T[]
+import { GetPaginated } from "../../types/pagination"
 
 // WARNING: This has to be in the server
 export const getPaginated: GetPaginated = (data, options = {}) => {

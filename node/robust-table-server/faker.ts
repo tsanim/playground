@@ -1,20 +1,12 @@
 import { faker } from "@faker-js/faker";
-
-interface User {
-  id: number;
-  name: string;
-  email: string;
-  dob: string;
-  country: string;
-  registrationDate: string;
-}
+import { User } from "./src/types/user";
 
 const generateUsers = (num: number): User[] => {
   const users: User[] = [];
-
   for (let i = 1; i <= num; i++) {
+    const nationalID = faker.string.numeric(10);
     users.push({
-      id: i,
+      id: nationalID,
       name: faker.person.fullName(),
       email: faker.internet.email(),
       dob: faker.date
@@ -26,12 +18,9 @@ const generateUsers = (num: number): User[] => {
         .recent({ days: 365 })
         .toISOString()
         .split("T")[0],
-    });
+    } as User);
   }
-
   return users;
 };
 
-// Generate 100,000 users
-const mockData = generateUsers(100000);
-console.log(mockData);
+export { generateUsers };
