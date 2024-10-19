@@ -1,0 +1,26 @@
+/* Colors */
+:root {
+    --primary-color: #3498db;
+    --primary-color-hover: #2980b9;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --button-text-color: #fff;
+    --link-color: #3498db;
+    --heading-color: #2c3e50;
+  
+    /* Container Max Width */
+    --container-max-width: 1200px;
+  
+    /* Spacing */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+  
+    /* Button */
+    --button-padding: 12px 24px;
+    --border-radius: 4px;
+  
+    /* Heading */
+    --heading-margin-bottom: 16px;
+  }
+  

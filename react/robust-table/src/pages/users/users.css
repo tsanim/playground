@@ -1,0 +1,15 @@
+.tableWrapper {
+    max-height: 80vh;
+    /* Set the desired height */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    border: 1px solid #ccc;
+    /* Optional border */
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background: #f1f1f1;
+    /* Optional: Make the header sticky */
+}

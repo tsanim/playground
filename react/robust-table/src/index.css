@@ -1,0 +1,108 @@
+@import "./variables.css";
+
+/* CSS Reset (Simplified) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Container for layout */
+.container {
+  width: 90%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+/* Common Button Styles */
+button {
+  font: inherit;
+  border: none;
+  padding: var(--button-padding);
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-color-hover);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: var(--heading-margin-bottom);
+  color: var(--heading-color);
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Utility Classes */
+.mt-1 {
+  margin-top: var(--spacing-small);
+}
+
+.mt-2 {
+  margin-top: var(--spacing-medium);
+}
+
+.mt-3 {
+  margin-top: var(--spacing-large);
+}
+
+.mb-1 {
+  margin-bottom: var(--spacing-small);
+}
+
+.mb-2 {
+  margin-bottom: var(--spacing-medium);
+}
+
+.mb-3 {
+  margin-bottom: var(--spacing-large);
+}
+
+.pt-1 {
+  padding-top: var(--spacing-small);
+}
+
+.pt-2 {
+  padding-top: var(--spacing-medium);
+}
+
+.pt-3 {
+  padding-top: var(--spacing-large);
+}
+
+.pb-1 {
+  padding-bottom: var(--spacing-small);
+}
+
+.pb-2 {
+  padding-bottom: var(--spacing-medium);
+}
+
+.pb-3 {
+  padding-bottom: var(--spacing-large);
+}
